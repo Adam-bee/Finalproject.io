@@ -2,48 +2,95 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Project: Blog</title>
-        <style> h2 {font-family:Helvetica;}
-            p {font-family:Sans-Serif;}
-            h6 {font-size:1em;}
-            h6 {font-style:italic;}
-                 #title{text-align:center;} 
-                 #title{background:rgb(225, 255, 0);}
-                 .index{font-weight:bold;}
-                   body {background-color:rgb(148, 237, 247);} 
-                 .First-post{background-color:rgb(17, 214, 96);}
-                .index{color:rgb(255, 255, 255);}
-                .date{color:rgb(255, 38, 0);
-                    line-height:0.01;
-                }
-                
-        </style>
+        <title>CSS inheritance</title>
+        <style>
+        body {
+            font-family: sans-serif;
+            color: rgb(211, 122, 255);
+        }
         
+        h2 {
+            font-family: cursive;
+            color: rgb(0, 232, 15);
+        }  
+        
+        #rabbits-info-heading {
+            background-color: purple;
+        }
+        
+        p {
+            color: rgb(191, 0, 255);
+            font-family: "Helvetica", sans-serif;
+        }
+        
+        #rabbits-info {
+            color: purple;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        
+        .song-lyrics {
+            background-color: yellow;
+            font-family: fantasy;
+            font-size: 13px;
+            font-style: italic;
+            line-height: 1.5em;
+            text-align: center;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        </style>
     </head>
     <body>
-        
-        <h1 id="title">Adam's blog</h1>
 
-        <h3><strong>Contents</strong></h3>
-        <ul>
-            <li class="index"><a href="#First post">First post!</a></li>
-            <li class="index"><a href="#second post"> Cheat sheet!</a></li>
-            </ul>
+    <h1>All about rabbits!</h1>
     
-        
-        <h2>First post</h2>
-        <h6 class="date">Posted on March,25th,2021.</h6>
-        
-        <p class="First-post">Something excited happened. I have just learned more in depth CSS and have the requirments to customize a website. Im excited for the final project, where we'll create a website!</p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Flowers_arranged_to_ALOHA%2C_Hilo%2C_Hawaii.JPG" height="200" class="First-post">
-       
-        <h2> Working on cheat sheet</h2>
-          <h6 class="date">Posted on March,25th,2021.</h6>
-        <p Class="First-post"> My cheat sheet involves two different parts, CSS and Https, Im supposed to log 10 different code tyes for each and explain them. This has proven harder than expected so I'm still working on it.</p> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Moods%2C_Ambassador_William_Foster%2C_Under_Secretary_of_State_George_Ball%2C_President_Lyndon_B._Johnson%2C_Secretary_of..._-_NARA_-_192609.tif/lossy-page1-1280px-Moods%2C_Ambassador_William_Foster%2C_Under_Secretary_of_State_George_Ball%2C_President_Lyndon_B._Johnson%2C_Secretary_of..._-_NARA_-_192609.tif.jpg" height="200" Class="Second-Post">
-      
-        <h2> Finished cheat sheet</h2>
-        <h6 class="date">Posted on March,27th,2021.</h6>
-        <p class="First-post"> I've finished my cheat sheet afte reviewing all of my assignments and seeing the types of code. Heres a table of what I got!</p>
-
-    </body> 
+    <h2 id="rabbits-info-heading">Basic info</h2>
+    
+    <p id="rabbits-info">Rabbits are little creatures with long ears and puffy tails, and they move their nose up and down in an adorable way. They eat the most orange vegetables in <em>our</em> world, and <strong>they reproduce more than any human <em>ever</em> has</strong>.</p>
+    
+    <p>Learn more on <a href="http://en.wikipedia.org/wiki/Rabbit">Wikipedia</a>.</p>
+    
+    <h2>Songs</h2>
+    
+    <p class="song-lyrics">Little Bunny Foo Foo, <br>
+I don't want to see you <br>
+scooping up the field mice <br>
+and bopping them on the head!</p>
+    
+    <p class="song-lyrics">And down came the Good Fairy <br>
+And she said <br>
+"Little bunny Foo Foo <br>
+I don't like you're attitude <br>
+Scooping up the field mice <br>
+And bopping 'em on the head" <br>
+    </p>
+    
+    <p class="song-lyrics">I'll give you 3 chances. <br>
+Then I'll turn you into a goon! <br>
+The next day…</p>
+    
+    <img src="https://www.kasandbox.org/programming-images/animals/rabbit.png" alt="Rabbit with lop ears in barn" width="203"> 
+    
+    <h3>Why rabbits make great pets</h3>
+    
+    <ul>
+        <li>They're furry!</li>
+        <li>Great listeners!</li>
+        <li>Eat all your leftover carrots!</li>
+    </ul>
+    
+    <h3>Top 3 most famous rabbits</h3>
+    
+    <ol>
+        <li>Bugs bunny</li>
+        <li>Easter Bunny</li>
+        <li>Thumper</li>
+    </ol>
+    
+    
+    </body>
 </html>
